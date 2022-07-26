@@ -1,0 +1,8 @@
+Student Admission Process
+
+1. Student make sequence in which colleges he want to fill
+2. Fills the admission form 
+3. CAP rounds 
+4. Results are announced
+5. Student select one of the options like freeze, float 
+6. If freeze, student gets into college.
