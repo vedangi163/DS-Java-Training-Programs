@@ -1,0 +1,66 @@
+// In D drive, riun eclipse.exe
+
+1. In local scope, we must have initialize the value before using it.
+   but for instance variable, you do not need for anythoimg
+
+
+HW
+static method and data members
+why main static access non-access members
+static is associated with data members and not local members
+
+final - variable, method and class
+
+Abstract - 
+1. An abstract class not instantiated, but reference can be created but it is null and eventually we cannot call non-abstract method on null
+2. AC contain non abstract methods also
+3. Abstract method do not have body
+4. A class must be abstract if it has abstract method in it
+5. We can bypass thye abstract method by making class as abstract
+
+
+Package
+organize the files
+java.lang ===> java/lang
+. used for directory hierachy
+
+
+
+constructor provided by compiler is default & explicire;ly defined by user called explicit constructor
+
+
+protected -> only by extends in child class 
+
+if throw is used within mwthod/constructor, method/constructor must used throws in case of checked exception
+All exceptions are checked except RuntimeException
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
