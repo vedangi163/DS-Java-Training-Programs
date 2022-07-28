@@ -35,6 +35,9 @@ if throw is used within mwthod/constructor, method/constructor must used throws 
 All exceptions are checked except RuntimeException
 
 
+No need to catch runtime/unchecked exceptions and no need to use throws in unchecked exceptions
+But checked exceptions must have to catch & need to throws from the methos
+
 
 
 
