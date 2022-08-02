@@ -39,6 +39,17 @@ No need to catch runtime/unchecked exceptions and no need to use throws in unche
 But checked exceptions must have to catch & need to throws from the methos
 
 
+For databse connection:
+1. Install databse
+2. Install drivers of database
+3. Write a java code to connect to the databse
+
+
+Driver:
+1. Know your driver
+2. Register the driver 
+3. 
+
 
 
 
