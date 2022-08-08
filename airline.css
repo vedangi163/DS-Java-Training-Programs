@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+
+body
+{
+	background-image: url("airport.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1
+{
+	color: blue;
+	text-align: center;
+}
+
+h2
+{
+	color:red;
+	text-align: center;	
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+}
+
+tr
+{
+	background-color: #ffffff;
+}
+
+th
+{
+	background-color: #BDB768;
+}
+
+a
+{
+	text-align: center;
+}
+
+br
+{
+	margin-top: 250px; 	
+}
