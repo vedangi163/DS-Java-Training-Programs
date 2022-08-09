@@ -1,0 +1,88 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="Test.css">
+
+<script>
+	function validateUser()
+	{
+		var uname = document.getElementById("uname").value;
+		if(uname == "")
+		{
+			document.getElementById("unameErr").innerHTML="Username can not be empty";
+			return false;
+		}
+		
+		
+		var upass = document.getElementById("upass").value;
+		if(upass == "")
+		{
+			document.getElementById("upassErr").innerHTML="Password can not be empty";
+			return false;
+		}
+		if(upass.length < 8)
+		{
+			document.getElementById("upassErr").innerHTML="Password length at least 8 char long";
+			return false;
+
+		}
+		var passw= /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,}$/;
+		
+		if(!(upass.match(passw))) 
+		{ 
+			//alert("not valid");
+			document.getElementById("upassErr").innerHTML="Password must contain at least 1 small, capital aphabet and 1 digit";
+			return false;
+		}
+		
+		
+		
+		
+		var retypepass = document.getElementById("retypepass").value;
+		if(retypepass == "")
+		{
+			document.getElementById("retypeErr").innerHTML="Password can not be empty";
+			return false;
+		}
+		if(upass != retypepass)
+		{
+			document.getElementById("retypeErr").innerHTML="Passwords aren't matching";
+			return false;
+		}
+		
+		
+		return true;
+	}
+	
+	function clearUnameErr()
+	{
+		document.getElementById("unameErr").innerHTML="";
+	}
+	
+	function clearUpassErr()
+	{
+		document.getElementById("upassErr").innerHTML="";
+	}
+	
+	
+	
+</script>
+</head>
+<body>
+	<form action="../UserDashBoard.html">
+	
+		Enter Username:<input type="email" required id="uname" onKeyUp="clearUnameErr()"><span id="unameErr"></span> <br>
+		Enter Password:<input type="password" id="upass" onKeyUp="clearUpassErr()" onKeyDown="validatePassword()"><span id="upassErr"></span> <br>
+		Re-type Password:<input type="password" id="retypepass" onKeyUp="clearRetypeErr()"><span id="retypeErr"></span> <br>
+	
+		<input type=submit name=submit onClick='return validateUser()' value="LOGIN">
+	
+	</form>
+	
+</body>
+</html>
