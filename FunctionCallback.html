@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function ask(question, ok, cancel)
+		{
+			if(confirm(question))
+				ok();
+			else
+				cancel();
+		}
+		
+		ask("Do you agree?", 
+			function agree() { alert("Yes, I agree"); },
+			function disagree() { alert("No, I do not agree"); }
+		);
+		
+		
+		ask("Are you sure ?", 
+				function sure() { alert("Yes, I am sure"); },
+				function notsure() { alert("No, I am not sure"); }
+			);
+	</script>
+</body>
+</html>

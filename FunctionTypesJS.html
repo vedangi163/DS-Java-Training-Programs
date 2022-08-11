@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	
+		function sayHi()
+		{ 
+			alert("In sayHi()");
+		}
+		alert( sayHi );
+		sayHi();
+		
+		function greet()
+		{
+			alert("Good morning");
+		}
+		
+		let whatsup1 = greet;
+		let whatsup2 = whatsup1;
+		
+		whatsup1();
+		greet();
+		whatsup2();
+		
+		let greetTheWorld = function(){
+			alert("How's the life? ");
+			return 500;
+		};
+		
+		var greetTheWorldAgain = greetTheWorld();
+		alert(greetTheWorldAgain);
+		
+		//var v1=  greetTheWorld();
+		//alert(v1);
+		//greetTheWorldAgain();
+		
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
